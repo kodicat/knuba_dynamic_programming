@@ -5,4 +5,3 @@ You are given two arrays rowSum and colSum of non-negative integers where rowSum
 Find any matrix of non-negative integers of size rowSum.length x colSum.length that satisfies the rowSum and colSum requirements.
 
 Return a 2D array representing any matrix that fulfills the requirements. It's guaranteed that at least one matrix that fulfills the requirements exists.
-

@@ -1,4 +1,4 @@
-namespace labs.lab_1;
+namespace labs.lab1;
 
 public static class FindValidMatrix
 {

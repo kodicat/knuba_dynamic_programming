@@ -1,6 +1,6 @@
 using FluentAssertions;
 using FluentAssertions.Execution;
-using labs.lab_1;
+using labs.lab1;
 using NUnit.Framework;
 
 namespace unit_tests.lab1;
