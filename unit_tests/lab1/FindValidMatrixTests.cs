@@ -1,10 +1,11 @@
 using FluentAssertions;
 using FluentAssertions.Execution;
 using labs.lab_1;
+using NUnit.Framework;
 
 namespace unit_tests.lab1;
 
-public class Tests
+public class FindValidMatrixTests
 {
     [Test]
     public void TestBasicScenario()
@@ -13,7 +14,7 @@ public class Tests
         var matrix = FindValidMatrix.RestoreMatrix(rowSum, colSum);
         TestMatrix(matrix, rowSum, colSum);
     }
-    
+
     [Test]
     public void TestScenarioMoreComplex()
     {

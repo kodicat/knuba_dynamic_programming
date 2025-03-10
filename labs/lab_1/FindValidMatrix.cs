@@ -20,7 +20,7 @@ public static class FindValidMatrix
             rowSum[rowIndex] -= maxValue;
             colSum[colIndex] -= maxValue;
         }
-        
+
         return matrix;
     }
 }
