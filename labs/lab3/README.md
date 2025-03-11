@@ -1,4 +1,4 @@
-### 207. Course Schedule - [link](https://leetcode.com/problems/maximum-number-of-fish-in-a-grid/description/)
+### 2658. Maximum Number of Fish in a Grid - [link](https://leetcode.com/problems/maximum-number-of-fish-in-a-grid/description/)
 
 You are given a 0-indexed 2D matrix grid of size m x n, where (r, c) represents:
 
