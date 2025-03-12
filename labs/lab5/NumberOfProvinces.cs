@@ -1,5 +1,6 @@
 namespace labs.lab5;
 
+// disjoint set union (DSU)
 public static class NumberOfProvinces
 {
     public static int FindCircleNum(int[][] isConnected)
