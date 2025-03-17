@@ -9,7 +9,7 @@ public class CountVowelStringsTests
     [Test]
     public void Test1()
     {
-        var n = 4;
+        var n = 1;
 
         var result = SortedVowelStrings.CountVowelStrings(n);
         result.Should().Be(5);
@@ -26,6 +26,24 @@ public class CountVowelStringsTests
 
     [Test]
     public void Test3()
+    {
+        var n = 3;
+
+        var result = SortedVowelStrings.CountVowelStrings(n);
+        result.Should().Be(35);
+    }
+
+    [Test]
+    public void Test4()
+    {
+        var n = 4;
+
+        var result = SortedVowelStrings.CountVowelStrings(n);
+        result.Should().Be(70);
+    }
+
+    [Test]
+    public void Test5()
     {
         var n = 33;
 
