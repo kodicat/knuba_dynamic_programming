@@ -33,4 +33,19 @@ public class FindCircleNumTests
         var result = NumberOfProvinces.FindCircleNum(isConnected);
         result.Should().Be(3);
     }
+
+    [Test]
+    public void Test3()
+    {
+        int[][] isConnected =
+        [
+            [1, 0, 0, 1],
+            [0, 1, 1, 0],
+            [0, 1, 1, 1],
+            [1, 0, 1, 1]
+        ];
+
+        var result = NumberOfProvinces.FindCircleNum(isConnected);
+        result.Should().Be(1);
+    }
 }

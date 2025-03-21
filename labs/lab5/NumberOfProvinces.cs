@@ -37,11 +37,9 @@ public static class NumberOfProvinces
         }
         else
         {
-            rank[jParent] = iParent;
+            parent[jParent] = iParent;
             rank[iParent]++;
         }
-
-        parent[iParent] = jParent;
     }
 
     private static int FindParent(int[] parent, int i)
