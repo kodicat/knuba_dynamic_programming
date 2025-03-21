@@ -21,32 +21,37 @@ public static class NumberOfProvinces
 
     private static void Union(int i, int j, int[] parent, int[] rank)
     {
-        var iParent = FindParent(parent, i);
-        var jParent = FindParent(parent, j);
+        var iParent = FindParentWithCompression(parent, i);
+        var jParent = FindParentWithCompression(parent, j);
         
         if (iParent == jParent)
             return;
 
-        if (rank[iParent] > rank[jParent])
-        {
-            parent[jParent] = iParent;
-        }
-        else if (rank[iParent] < rank[jParent])
-        {
-            parent[iParent] = jParent;
-        }
-        else
-        {
-            parent[jParent] = iParent;
-            rank[iParent]++;
-        }
+        UnionParentsWithRanking(parent, rank, iParent, jParent);
     }
 
-    private static int FindParent(int[] parent, int i)
+    private static int FindParentWithCompression(int[] parent, int i)
     {
         if (parent[i] != i)
-            parent[i] = FindParent(parent, parent[i]);
+            parent[i] = FindParentWithCompression(parent, parent[i]);
 
         return parent[i];
+    }
+
+    private static void UnionParentsWithRanking(int[] parent, int[] rank, int iParent, int jParent)
+    {
+        var from = iParent;
+        var to = jParent;
+
+        if (rank[iParent] > rank[jParent])
+        {
+            from = jParent;
+            to = iParent;
+        }
+
+        parent[from] = to;
+
+        if (rank[iParent] == rank[jParent])
+            rank[iParent]++;
     }
 }
