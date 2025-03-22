@@ -40,18 +40,18 @@ public static class NumberOfProvinces
 
     private static void UnionParentsWithRanking(int[] parent, int[] rank, int iParent, int jParent)
     {
-        var from = iParent;
-        var to = jParent;
-
         if (rank[iParent] > rank[jParent])
         {
-            from = jParent;
-            to = iParent;
+            parent[jParent] = iParent;
         }
-
-        parent[from] = to;
-
-        if (rank[iParent] == rank[jParent])
+        else if (rank[iParent] < rank[jParent])
+        {
+            parent[iParent] = jParent;
+        }
+        else
+        {
+            parent[jParent] = iParent;
             rank[iParent]++;
+        }
     }
 }
