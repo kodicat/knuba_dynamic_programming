@@ -15,11 +15,11 @@ public class MaximumSpanningTreeTests
         var expected = 5;
 
         var kruskal = BuyAnythingKruskal.MaximumSpanningTree(n, values);
-        var prim = BuyAnythingPrim.MaximumSpanningTree(n, values);
-        
+        var kruskalListImplementation = BuyAnythingKruskalListImplementation.MaximumSpanningTree(n, values);
+
         using var scope = new AssertionScope();
         kruskal.Should().Be(expected);
-        prim.Should().Be(expected);
+        kruskalListImplementation.Should().Be(expected);
     }
 
     [Test]
@@ -30,11 +30,11 @@ public class MaximumSpanningTreeTests
         var expected = 1;
 
         var kruskal = BuyAnythingKruskal.MaximumSpanningTree(n, values);
-        var prim = BuyAnythingPrim.MaximumSpanningTree(n, values);
-        
+        var kruskalListImplementation = BuyAnythingKruskalListImplementation.MaximumSpanningTree(n, values);
+
         using var scope = new AssertionScope();
         kruskal.Should().Be(expected);
-        prim.Should().Be(expected);
+        kruskalListImplementation.Should().Be(expected);
     }
 
     [Test]
@@ -45,11 +45,11 @@ public class MaximumSpanningTreeTests
         var expected = 449;
 
         var kruskal = BuyAnythingKruskal.MaximumSpanningTree(n, values);
-        var prim = BuyAnythingPrim.MaximumSpanningTree(n, values);
+        var kruskalListImplementation = BuyAnythingKruskalListImplementation.MaximumSpanningTree(n, values);
 
         using var scope = new AssertionScope();
         kruskal.Should().Be(expected);
-        prim.Should().Be(expected);
+        kruskalListImplementation.Should().Be(expected);
     }
 
     [Test]
@@ -64,11 +64,11 @@ public class MaximumSpanningTreeTests
         var expected = 722;
 
         var kruskal = BuyAnythingKruskal.MaximumSpanningTree(n, values);
-        var prim = BuyAnythingPrim.MaximumSpanningTree(n, values);
+        var kruskalListImplementation = BuyAnythingKruskalListImplementation.MaximumSpanningTree(n, values);
 
         using var scope = new AssertionScope();
         kruskal.Should().Be(expected);
-        prim.Should().Be(expected);
+        kruskalListImplementation.Should().Be(expected);
     }
 
     [Test]
@@ -83,10 +83,10 @@ public class MaximumSpanningTreeTests
         var expected = 610;
 
         var kruskal = BuyAnythingKruskal.MaximumSpanningTree(n, values);
-        var prim = BuyAnythingPrim.MaximumSpanningTree(n, values);
+        var kruskalListImplementation = BuyAnythingKruskalListImplementation.MaximumSpanningTree(n, values);
 
         using var scope = new AssertionScope();
         kruskal.Should().Be(expected);
-        prim.Should().Be(expected);
+        kruskalListImplementation.Should().Be(expected);
     }
 }

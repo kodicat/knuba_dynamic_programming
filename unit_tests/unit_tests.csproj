@@ -22,4 +22,10 @@
       <ProjectReference Include="..\labs\labs.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+        <None Update="lab4\files\*.txt">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+    </ItemGroup>
+
 </Project>
