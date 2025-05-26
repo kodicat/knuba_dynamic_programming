@@ -1,18 +1,11 @@
-### I'll buy you anything - [link](https://www.hackerearth.com/practice/algorithms/graphs/minimum-spanning-tree/practice-problems/algorithm/ill-buy-you-anything-58bd4544/)
+### 3 types - [link](https://www.hackerearth.com/practice/algorithms/graphs/minimum-spanning-tree/practice-problems/algorithm/3-types/)
 
-One day friend A went to his friend B's house and found N balls lying around, each with a value A[i] written on it. Being the ball lover that he was, he decided to put them all in a bucket.
+Let's consider some weird country with N cities and M bidirectional roads of 3 types. It's weird because of some unusual rules about using these roads: men can use roads of types 1 and 3 only and women can use roads of types 2 and 3 only. Please answer the following very interesting question: what is maximum number of roads it's possible to destroy that the country will be still connected for both men and women? Connected country is country where it's possible to travel from any city to any other using existing roads.
 
-But just as he was about to have some bucket-filling fun, B appeared out of nowhere like a math-loving superhero and said, "Hold up, boy! I'll buy you anything you want if you let me put some math into this party."
+Input
 
-Confused but intrigued, A listened as B explained that if the bucket is empty, he can put a ball in it for free. But if it's not empty, he has to pick one ball from inside the bucket and another from outside and put them both in. The cost of doing this is GCD(a[i], a[j]).
+The first line contains 2 space-separated integer: N and M. Each of the following M lines contain description of one edge: three different space-separated integers: a, b and c. a and b are different and from 1 to N each and denote numbers of vertices that are connected by this edge. c denotes type of this edge.
 
-Then A asked what GCD meant, and B chuckled and gave him a quick lesson. "It's the biggest number that can divide both those values evenly," he said.
+Output
 
-A's eyes lit up at the possibility of getting some sweet swag from his friend. He wanted to maximize the total cost. So, how much cost did he end up getting?
-
-Input format
-- The first line contains an integer N.
-- The second line contains N space-separated integers denoting the elements of array A.
-
-Output format
-- Print the maximum total cost in a new line.
+For each test case output one integer - maximal number of roads it's possible to destroy or -1 if the country is not connected initially for both men and women.
